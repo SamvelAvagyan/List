@@ -6,22 +6,9 @@ namespace Mic.VetEducation.MyList
     {
         static void Main(string[] args)
         {
-            MyList list = new MyList();
-            list.Add(5).Add(50).Add(35).Add(100).Add(100).Add(5);
-
-            Enumerator ob = new Enumerator(list);
-            int max = ob.list.value;
-            while (ob.list.Next != null)
-            {
-                if (max < ob.list.Next.value)
-                {
-                    max = ob.list.Next.value;
-                }
-
-                ob.MoveNext();
-            }
-
-            Console.WriteLine($"Max = {max}");
+            MyList list = new MyList { value = 15 };
+            list.Add(5).Add(50).Add(50).Add(100).Add(100).Add(5);
+            Console.WriteLine($"Max = {list.Max()} Min = {list.Min()}");
         }
     }
 }

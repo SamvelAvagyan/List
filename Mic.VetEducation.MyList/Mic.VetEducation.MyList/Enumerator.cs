@@ -7,27 +7,28 @@ namespace Mic.VetEducation.MyList
 {
     class Enumerator : IEnumerator
     {
-        public MyList list;
+        public MyList root;
         public object Current { get; private set; }
 
-        public Enumerator(MyList l)
+        public Enumerator(MyList r)
         {
-            list = l;
+            root = r;
         }
         public bool MoveNext()
         {
-            if(list.Next == null)
+            if(root.Next == null)
             {
                 return false;
             }
 
-            Current = list.value;
+            Current = root.value;
+            root = root.Next;
             return true;
         }
 
         public void Reset()
         {
-            list.Next = null;
+            root.Next = null;
         }
     }
 }

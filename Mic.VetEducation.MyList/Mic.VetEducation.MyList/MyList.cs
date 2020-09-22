@@ -12,9 +12,42 @@ namespace Mic.VetEducation.MyList
 
         public MyList Add(int value)
         {
-            this.value = value;
-            Next = new MyList();
+            Next = new MyList { value = value };
             return Next;
+        }
+
+        public int Max()
+        {
+            int max = Next.value;
+            MyList _list = Next.Next;
+            while (_list != null)
+            {
+                if (max < _list.value)
+                {
+                    max = _list.value;
+                }
+
+                _list = _list.Next;
+            }
+
+            return max;
+        }
+
+        public int Min()
+        {
+            int min = Next.value;
+            MyList _list = Next.Next;
+            while (_list != null)
+            {
+                if (min > _list.value)
+                {
+                    min = _list.value;
+                }
+
+                _list = _list.Next;
+            }
+
+            return min;
         }
 
         public IEnumerator GetEnumerator()
