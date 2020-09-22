@@ -1,0 +1,13 @@
+C:\Users\Acer\source\repos\Mic.VetEducation.MyList\Mic.VetEducation.MyList\bin\Debug\netcoreapp3.1\Mic.VetEducation.MyList.exe
+C:\Users\Acer\source\repos\Mic.VetEducation.MyList\Mic.VetEducation.MyList\bin\Debug\netcoreapp3.1\Mic.VetEducation.MyList.deps.json
+C:\Users\Acer\source\repos\Mic.VetEducation.MyList\Mic.VetEducation.MyList\bin\Debug\netcoreapp3.1\Mic.VetEducation.MyList.runtimeconfig.json
+C:\Users\Acer\source\repos\Mic.VetEducation.MyList\Mic.VetEducation.MyList\bin\Debug\netcoreapp3.1\Mic.VetEducation.MyList.runtimeconfig.dev.json
+C:\Users\Acer\source\repos\Mic.VetEducation.MyList\Mic.VetEducation.MyList\bin\Debug\netcoreapp3.1\Mic.VetEducation.MyList.dll
+C:\Users\Acer\source\repos\Mic.VetEducation.MyList\Mic.VetEducation.MyList\bin\Debug\netcoreapp3.1\Mic.VetEducation.MyList.pdb
+C:\Users\Acer\source\repos\Mic.VetEducation.MyList\Mic.VetEducation.MyList\obj\Debug\netcoreapp3.1\Mic.VetEducation.MyList.csprojAssemblyReference.cache
+C:\Users\Acer\source\repos\Mic.VetEducation.MyList\Mic.VetEducation.MyList\obj\Debug\netcoreapp3.1\Mic.VetEducation.MyList.AssemblyInfoInputs.cache
+C:\Users\Acer\source\repos\Mic.VetEducation.MyList\Mic.VetEducation.MyList\obj\Debug\netcoreapp3.1\Mic.VetEducation.MyList.AssemblyInfo.cs
+C:\Users\Acer\source\repos\Mic.VetEducation.MyList\Mic.VetEducation.MyList\obj\Debug\netcoreapp3.1\Mic.VetEducation.MyList.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\Mic.VetEducation.MyList\Mic.VetEducation.MyList\obj\Debug\netcoreapp3.1\Mic.VetEducation.MyList.dll
+C:\Users\Acer\source\repos\Mic.VetEducation.MyList\Mic.VetEducation.MyList\obj\Debug\netcoreapp3.1\Mic.VetEducation.MyList.pdb
+C:\Users\Acer\source\repos\Mic.VetEducation.MyList\Mic.VetEducation.MyList\obj\Debug\netcoreapp3.1\Mic.VetEducation.MyList.genruntimeconfig.cache
