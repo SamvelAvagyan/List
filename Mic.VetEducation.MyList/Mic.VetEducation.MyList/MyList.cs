@@ -5,21 +5,21 @@ using System.Text;
 
 namespace Mic.VetEducation.MyList
 {
-    class MyList : IEnumerable
+    class MyList<T> : IEnumerable
     {
-        public int value;
-        public MyList Next;
+        public T value;
+        public MyList<T> Next;
 
-        public MyList Add(int value)
+        public MyList<T> Add(T value)
         {
-            Next = new MyList { value = value };
+            Next = new MyList<T> { value = value };
             return Next;
         }
 
-        public int Max()
+        public T Max()
         {
-            int max = Next.value;
-            MyList _list = Next.Next;
+            T max = Next.value;
+            MyList<T> _list = Next.Next;
             while (_list != null)
             {
                 if (max < _list.value)
@@ -33,10 +33,10 @@ namespace Mic.VetEducation.MyList
             return max;
         }
 
-        public int Min()
+        public T Min()
         {
-            int min = Next.value;
-            MyList _list = Next.Next;
+            T min = Next.value;
+            MyList<T> _list = Next.Next;
             while (_list != null)
             {
                 if (min > _list.value)
@@ -52,7 +52,34 @@ namespace Mic.VetEducation.MyList
 
         public IEnumerator GetEnumerator()
         {
-            throw new NotImplementedException();
+            return new Enumerator<T>(this);
+        }
+
+        private class Enumerator<A> : IEnumerator
+        {
+            public MyList<A> root;
+            public object Current { get; private set; }
+
+            public Enumerator(MyList<A> r)
+            {
+                root = r;
+            }
+            public bool MoveNext()
+            {
+                if (root.Next == null)
+                {
+                    return false;
+                }
+
+                Current = root.value;
+                root = root.Next;
+                return true;
+            }
+
+            public void Reset()
+            {
+                root.Next = null;
+            }
         }
     }
 }
