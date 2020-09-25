@@ -16,40 +16,6 @@ namespace Mic.VetEducation.MyList
             return Next;
         }
 
-        public T Max()
-        {
-            T max = Next.value;
-            MyList<T> _list = Next.Next;
-            while (_list != null)
-            {
-                if (max < _list.value)
-                {
-                    max = _list.value;
-                }
-
-                _list = _list.Next;
-            }
-
-            return max;
-        }
-
-        public T Min()
-        {
-            T min = Next.value;
-            MyList<T> _list = Next.Next;
-            while (_list != null)
-            {
-                if (min > _list.value)
-                {
-                    min = _list.value;
-                }
-
-                _list = _list.Next;
-            }
-
-            return min;
-        }
-
         public IEnumerator GetEnumerator()
         {
             return new Enumerator<T>(this);
